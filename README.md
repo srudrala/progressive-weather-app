@@ -5,6 +5,10 @@ Assignment :
 1. Created AWS Account
 2. created GitHub Account
 
+
+Actually i created the paid instances because while accessing the servers those are not opening because of some configuration and memory issues .
+
+
 Installation kubernetes and setup cluster :
 
  Created 2 servers , named as master and node
@@ -101,6 +105,7 @@ apt-get install nodejs
 
 apt-get install git
 
+
 jenkins installation and setup
 
 sudo apt install default-jre
@@ -133,14 +138,26 @@ Sudo git clone “repositoryname”
 
 go to manage jenkins and install git plugin and nodejs plugin
 
-go to global tool configuration and configure the nodejs and git tools
+go to global tool configuration and configure the nodejs and git tool and jdk
 
 Go to Jenkins -  create job 
                  |
                  select freestyle project
                  |
                  configure the job
+                 |
+                 build
+                 
+ 
+ i got many trouble shooting problems while doing the build  i solved those
+ 
+ actually in server it installed the old versions of npm package and nodejs but in jenkins server installed newer versions of npm and nodejs that is one of the error while building the job
+ 
+ finally vuejs app is build successfull
+ 
+ 
                  
                  
+           
         
                  build
