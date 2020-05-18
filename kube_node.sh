@@ -13,3 +13,4 @@ sleep 10
 sudo cp /etc/systemd/system/kubelet.service.d/10-kubeadm.conf.dpkg-new  /etc/systemd/system/kubelet.service.d/10-kubeadm.conf
 sudo chown -R jenkins:jenkins /etc/systemd/system/kubelet.service.d/
 echo 'Environment="cgroup-driver=systemd/cgroup-driver=cgroupfs"' >> /etc/systemd/system/kubelet.service.d/10-kubeadm.conf
+exit
