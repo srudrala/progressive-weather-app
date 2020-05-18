@@ -25,3 +25,10 @@ Step3:- sudo add-apt-repository \
 Step4:- sudo apt-get update
 Step5:- sudo apt-get install docker-ce docker-ce-cli containerd.io
 
+Installation of kubernetes:-
+
+There are two kube script files one for to set-up master node and another is for to set-up slave node.
+
+To set-up a kubernetes master run the kube-master.sh. Once the script is executed copy the generated token which needs to be exected in salve node to join the k8s cluster.
+
+To set-up slave node run kube-node.sh. Execte "kubectl get nodes" to check the nodes status, it should be ready and execute "kubectl get pods -A -o wide" to list all the pods.
